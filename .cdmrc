@@ -1,1 +1,15 @@
 tabs: ['README.md']
+# Define lab view
+playground-view: terminal-editor
+
+# Open these files by default
+tabs:
+  - README.md
+  - main.py#1:1
+
+# Add a run button
+run-button: python3 $$file
+
+# Optional welcome message
+terminals:
+  - echo "Welcome to Python Lab!"
