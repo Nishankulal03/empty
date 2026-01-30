@@ -1,1 +1,17 @@
-tabs: ['README.md']
+# Open a terminal and show instructions once playground boots
+terminals:
+  - echo "Welcome to the Python ETL Lab"
+  - echo "Edit script.py and click Run Tests to validate your solution"
+
+# Open important files by default
+tabs:
+  - script.py
+  - sales.csv
+  - config.yaml
+  - README.md
+
+# No browser needed for this lab
+playground-view: terminal-editor
+
+# Optional run button for quick execution (not for tests)
+run-button: python3 $$file
